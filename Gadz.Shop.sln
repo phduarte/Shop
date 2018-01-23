@@ -3,6 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Commom", "0. Commom", "{36CDB131-4EC7-4CA5-B229-01222E6E8C1D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Store", "1. Store", "{D5F4B7D0-EF38-4642-9364-E1EDD991F1A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Access", "2. Access", "{BE8148C7-2CF5-4970-B062-3A041577F768}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Billing", "3. Billing", "{D3220C62-BD51-4C42-91CF-820B5B13BEF4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Delivery", "4. Delivery", "{11C5450A-1DA4-4E66-AA61-B59F8A611AF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Stock", "5. Stock", "{1D3FA20E-BEF4-4CEF-9930-56F74354691C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Reports", "6. Reports", "{B9A9ABD0-9F4C-4F40-9B93-34F4F038E986}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7. Admin", "7. Admin", "{14B90142-53C5-4DBC-9FF1-8BCD432B75CB}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
