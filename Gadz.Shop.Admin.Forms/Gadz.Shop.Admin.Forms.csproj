@@ -45,14 +45,170 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Categorias\Cadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Categorias\Cadastrar.Designer.cs">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Credito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Credito.Designer.cs">
+      <DependentUpon>Credito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enderecos\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enderecos\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque\Adicionar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque\Adicionar.Designer.cs">
+      <DependentUpon>Adicionar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque\Excluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque\Excluir.Designer.cs">
+      <DependentUpon>Excluir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fabricantes\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fabricantes\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fabricantes\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fabricantes\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionarios\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionarios\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kits\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kits\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Precos\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Precos\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salarios\Alteracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salarios\Alteracao.Designer.cs">
+      <DependentUpon>Alteracao.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Categorias\Cadastrar.resx">
+      <DependentUpon>Cadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enderecos\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estoque\Adicionar.resx">
+      <DependentUpon>Adicionar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fabricantes\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fabricantes\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionarios\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kits\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Precos\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +218,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Salarios\Alteracao.resx">
+      <DependentUpon>Alteracao.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -74,6 +233,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gadz.Shop.Access.Forms\Gadz.Shop.Access.Forms.csproj">
+      <Project>{da187c91-aadc-490f-a95a-449ed815a066}</Project>
+      <Name>Gadz.Shop.Access.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Access\Gadz.Shop.Access.csproj">
+      <Project>{c5383832-13cf-4ec3-91cc-b6495ac9aad7}</Project>
+      <Name>Gadz.Shop.Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Forms\Gadz.Shop.Commom.Forms.csproj">
+      <Project>{fb27c6e3-8f95-476d-823f-2fa460610b6a}</Project>
+      <Name>Gadz.Shop.Commom.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Model\Gadz.Shop.Commom.Model.csproj">
+      <Project>{51be1507-c09a-4763-9b08-a109dd46b06f}</Project>
+      <Name>Gadz.Shop.Commom.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Resources\Gadz.Shop.Commom.Resources.csproj">
+      <Project>{e58c2eea-71be-4452-a62f-197c7aa2c87e}</Project>
+      <Name>Gadz.Shop.Commom.Resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4018E626-6A5C-463C-AC58-A0E6C0539311}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gadz.Shop.Store</RootNamespace>
+    <AssemblyName>Store</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>Gadz.Shop.Store.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExtensions.cs" />
+    <Compile Include="Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Index.designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sessao.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gadz.Shop.Access.Forms\Gadz.Shop.Access.Forms.csproj">
+      <Project>{da187c91-aadc-490f-a95a-449ed815a066}</Project>
+      <Name>Gadz.Shop.Access.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Access\Gadz.Shop.Access.csproj">
+      <Project>{c5383832-13cf-4ec3-91cc-b6495ac9aad7}</Project>
+      <Name>Gadz.Shop.Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Admin.Forms\Gadz.Shop.Admin.Forms.csproj">
+      <Project>{bc3822ec-75b5-4c51-b1c1-1ec6df5c8020}</Project>
+      <Name>Gadz.Shop.Admin.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Billing.Forms\Gadz.Shop.Billing.Forms.csproj">
+      <Project>{45b790fd-409f-48af-96c8-6d845ac17021}</Project>
+      <Name>Gadz.Shop.Billing.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Billing\Gadz.Shop.Billing.csproj">
+      <Project>{ea1743bc-4e80-4d54-90ce-acfee92cafc1}</Project>
+      <Name>Gadz.Shop.Billing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Forms\Gadz.Shop.Commom.Forms.csproj">
+      <Project>{fb27c6e3-8f95-476d-823f-2fa460610b6a}</Project>
+      <Name>Gadz.Shop.Commom.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Model\Gadz.Shop.Commom.Model.csproj">
+      <Project>{51be1507-c09a-4763-9b08-a109dd46b06f}</Project>
+      <Name>Gadz.Shop.Commom.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Resources\Gadz.Shop.Commom.Resources.csproj">
+      <Project>{e58c2eea-71be-4452-a62f-197c7aa2c87e}</Project>
+      <Name>Gadz.Shop.Commom.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Delivery.Forms\Gadz.Shop.Delivery.Forms.csproj">
+      <Project>{b8583020-c9c3-4fa4-9def-8bd738df75cf}</Project>
+      <Name>Gadz.Shop.Delivery.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Delivery\Gadz.Shop.Delivery.csproj">
+      <Project>{d59059be-4c57-47b3-9cfb-e3098baa8a70}</Project>
+      <Name>Gadz.Shop.Delivery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Stock.Forms\Gadz.Shop.Stock.Forms.csproj">
+      <Project>{f2c64890-a5bb-418a-a811-0dcd139c82b7}</Project>
+      <Name>Gadz.Shop.Stock.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Stock\Gadz.Shop.Stock.csproj">
+      <Project>{2504bee8-35cd-40a1-a905-92b20a36be3c}</Project>
+      <Name>Gadz.Shop.Stock</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

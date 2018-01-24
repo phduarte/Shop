@@ -1,11 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Gadz.Shop.Commom.Model {
+﻿namespace Gadz.Shop.Commom.Model {
     public abstract class Entity : IEntity {
-        public Identity Id => throw new NotImplementedException();
+
+        public Identity Id { get; private set; }
+        public bool Exists { get; private set; }
+
+        protected Entity(Identity id) {
+            Id = id;
+            Exists = true;
+        }
+
+        protected Entity() {
+            Id = Identity.New();
+            Exists = false;
+        }
     }
 }

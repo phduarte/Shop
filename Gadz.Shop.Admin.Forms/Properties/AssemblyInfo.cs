@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Gadz.Shop.Admin.Forms")]
+[assembly: AssemblyTitle("Admin")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Gadz.Shop.Admin.Forms")]
+[assembly: AssemblyProduct("Gadz.CRM.Admin")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("bc3822ec-75b5-4c51-b1c1-1ec6df5c8020")]
+[assembly: Guid("2365ca13-a9b4-4fb0-9db9-76b597b8e88e")]
 
 // Version information for an assembly consists of the following four values:
 //

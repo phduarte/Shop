@@ -32,15 +32,18 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Text\Access.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -68,29 +71,66 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Text\Access.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Access.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Text\Billing.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Billing.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Text\Delivery.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Delivery.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Text\Stock.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Stock.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Text\Store.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Store.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Image\" />
+    <Content Include="Image\bg_header_silver.png" />
+    <Content Include="Image\bg_input.png" />
+    <Content Include="Image\bg_input_silver.png" />
+    <Content Include="Image\calcular_preco.png" />
+    <Content Include="Image\carrinho.png" />
+    <Content Include="Image\carrinho_s1.jpg" />
+    <Content Include="Image\cifrao.png" />
+    <Content Include="Image\cifrao1.png" />
+    <Content Include="Image\eletromig_logo.png" />
+    <Content Include="Image\equipe.jpg" />
+    <Content Include="Image\estoque.png" />
+    <Content Include="Image\fabrica.png" />
+    <Content Include="Image\fabrica_grayscale.png" />
+    <Content Include="Image\fornecedor.png" />
+    <Content Include="Image\funcionarios.png" />
+    <Content Include="Image\gadesi_64px.ico" />
+    <Content Include="Image\icon_carrinho.jpg" />
+    <Content Include="Image\icon_carrinho.png" />
+    <Content Include="Image\icon_carrinho_add.png" />
+    <Content Include="Image\icon_carrinho_remove.png" />
+    <Content Include="Image\icon_dollar.png" />
+    <Content Include="Image\icon_savar.png" />
+    <Content Include="Image\icon_search_24x24.png" />
+    <Content Include="Image\img_reset_24x24.png" />
+    <Content Include="Image\img_salvar_24x24.png" />
+    <Content Include="Image\origem.png" />
+    <Content Include="Image\preco.png" />
+    <Content Include="Image\preco_grayscale.png" />
+    <Content Include="Image\procurar_preco.png" />
+    <Content Include="Image\produto.png" />
+    <Content Include="Image\produtos.png" />
+    <Content Include="Image\produtos_grayscale.png" />
+    <Content Include="Image\User_Group_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

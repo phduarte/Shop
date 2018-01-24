@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{309D55BE-8F94-4060-990D-04A78B22B987}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gadz.Shop.Selling.Forms</RootNamespace>
+    <AssemblyName>Selling</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdicionarDinheiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdicionarDinheiro.designer.cs">
+      <DependentUpon>AdicionarDinheiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastrarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastrarVenda.designer.cs">
+      <DependentUpon>CadastrarVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EscolherAcao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EscolherAcao.designer.cs">
+      <DependentUpon>EscolherAcao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinalizarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinalizarVenda.designer.cs">
+      <DependentUpon>FinalizarVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniciarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IniciarVenda.designer.cs">
+      <DependentUpon>IniciarVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PesquisarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PesquisarVenda.designer.cs">
+      <DependentUpon>PesquisarVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VendaConcluir__.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendaConcluir__.designer.cs">
+      <DependentUpon>VendaConcluir__.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdicionarDinheiro.resx">
+      <DependentUpon>AdicionarDinheiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastrarVenda.resx">
+      <DependentUpon>CadastrarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EscolherAcao.resx">
+      <DependentUpon>EscolherAcao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinalizarVenda.resx">
+      <DependentUpon>FinalizarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IniciarVenda.resx">
+      <DependentUpon>IniciarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PesquisarVenda.resx">
+      <DependentUpon>PesquisarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendaConcluir__.resx">
+      <DependentUpon>VendaConcluir__.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Forms\Gadz.Shop.Commom.Forms.csproj">
+      <Project>{fb27c6e3-8f95-476d-823f-2fa460610b6a}</Project>
+      <Name>Gadz.Shop.Commom.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Resources\Gadz.Shop.Commom.Resources.csproj">
+      <Project>{e58c2eea-71be-4452-a62f-197c7aa2c87e}</Project>
+      <Name>Gadz.Shop.Commom.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Utils\Gadz.Shop.Commom.Utils.csproj">
+      <Project>{6db73ff5-b44c-476b-9747-e593e4e6b1b4}</Project>
+      <Name>Gadz.Shop.Commom.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Selling\Gadz.Shop.Selling.csproj">
+      <Project>{28bae424-8685-471a-a972-b4be512f5ed1}</Project>
+      <Name>Gadz.Shop.Selling</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
