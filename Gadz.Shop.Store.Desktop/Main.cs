@@ -198,12 +198,12 @@ namespace Gadz.Shop.Store {
 
         //Estoquista
         private void AddEstoque(object sender, EventArgs e) {
-            new Admin.Forms.Estoque.Adicionar().ShowInside(this);
+            new Admin.Forms.Estoque.Entrada().ShowInside(this);
         }
 
         //
         private void AddCategoria(object sender, EventArgs e) {
-            new Admin.Forms.Categorias.Cadastrar().ShowInside(this);
+            new Admin.Forms.Categorias.Cadastro().ShowInside(this);
         }
 
         private void AddGrupo(object sender, EventArgs e) {

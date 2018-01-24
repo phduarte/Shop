@@ -3,16 +3,16 @@ using System;
 using System.Windows.Forms;
 
 namespace Gadz.Shop.Admin.Forms.Salarios {
-    public partial class Alteracao : MdiBaseForm {
+    public partial class Cadastro : MdiBaseForm {
 
         private int _id_funcionario;
         private string _cpf = "";
 
-        public Alteracao() {
+        public Cadastro() {
             InitializeComponent();
         }
 
-        public Alteracao(Form mdi, string cpf) : this() {
+        public Cadastro(Form mdi, string cpf) : this() {
             _cpf = cpf;
         }
 

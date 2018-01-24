@@ -321,7 +321,7 @@ namespace Gadz.Shop.Admin.Forms.Produtos {
         }
 
         private void CadastrarCategoria(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Categorias.Cadastrar().ShowInside(_currentMdiParent);
+            new Categorias.Cadastro().ShowInside(_currentMdiParent);
         }
 
         private void CadastrarFabricante(object sender, LinkLabelLinkClickedEventArgs e) {

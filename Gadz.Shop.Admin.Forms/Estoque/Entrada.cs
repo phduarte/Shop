@@ -2,15 +2,15 @@
 using System.Windows.Forms;
 
 namespace Gadz.Shop.Admin.Forms.Estoque {
-    public partial class Adicionar : MdiBaseForm {
+    public partial class Entrada : MdiBaseForm {
 
         public int id_produto { get; set; }
 
-        public Adicionar() {
+        public Entrada() {
             InitializeComponent();
         }
 
-        public Adicionar(int id_produto) {
+        public Entrada(int id_produto) {
             this.id_produto = id_produto;
             InitializeComponent();
         }
@@ -123,7 +123,7 @@ namespace Gadz.Shop.Admin.Forms.Estoque {
         }
 
         private void CadastrarCategoria(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Categorias.Cadastrar().ShowInside(_currentMdiParent);
+            new Categorias.Cadastro().ShowInside(_currentMdiParent);
         }
     }
 }

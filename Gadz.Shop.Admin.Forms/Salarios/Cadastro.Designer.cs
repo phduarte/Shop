@@ -1,6 +1,6 @@
 ﻿namespace Gadz.Shop.Admin.Forms.Salarios
 {
-    partial class Alteracao
+    partial class Cadastro
     {
         /// <summary>
         /// Required designer variable.

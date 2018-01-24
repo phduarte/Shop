@@ -7,7 +7,7 @@
     <ProjectGuid>{B8583020-C9C3-4FA4-9DEF-8BD738DF75CF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Gadz.Shop.Delivery.Forms</RootNamespace>
-    <AssemblyName>Gadz.Shop.Delivery.Forms</AssemblyName>
+    <AssemblyName>Delivery</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

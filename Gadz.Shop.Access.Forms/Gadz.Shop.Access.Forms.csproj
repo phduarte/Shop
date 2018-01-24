@@ -5,9 +5,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{DA187C91-AADC-490F-A95A-449ED815A066}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>Gadz.Shop.Access.Forms</RootNamespace>
-    <AssemblyName>Access</AssemblyName>
+    <AssemblyName>Gadz.Shop.Access.Forms</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,6 +54,7 @@
     <Compile Include="AlterarSenha.designer.cs">
       <DependentUpon>AlterarSenha.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormExtensions.cs" />
     <Compile Include="RecuperacaoSenha.cs">
       <SubType>Form</SubType>
     </Compile>

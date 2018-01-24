@@ -7,7 +7,7 @@
     <ProjectGuid>{45B790FD-409F-48AF-96C8-6D845AC17021}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Gadz.Shop.Billing.Forms</RootNamespace>
-    <AssemblyName>Gadz.Shop.Billing.Forms</AssemblyName>
+    <AssemblyName>Billing</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

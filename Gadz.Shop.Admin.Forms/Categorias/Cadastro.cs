@@ -4,11 +4,11 @@ using System.Windows.Forms;
 
 namespace Gadz.Shop.Admin.Forms.Categorias {
 
-    public partial class Cadastrar : MdiBaseForm {
+    public partial class Cadastro : MdiBaseForm {
 
         public int id_categoria = 0;
 
-        public Cadastrar() {
+        public Cadastro() {
             InitializeComponent();
         }
 

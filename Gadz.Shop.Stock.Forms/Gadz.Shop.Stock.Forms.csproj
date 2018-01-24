@@ -7,7 +7,7 @@
     <ProjectGuid>{F2C64890-A5BB-418A-A811-0DCD139C82B7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Gadz.Shop.Stock.Forms</RootNamespace>
-    <AssemblyName>Gadz.Shop.Stock.Forms</AssemblyName>
+    <AssemblyName>Stock</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

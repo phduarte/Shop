@@ -1,5 +1,5 @@
 ﻿namespace Gadz.Shop.Admin.Forms.Categorias {
-    partial class Cadastrar
+    partial class Cadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -27,7 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastrar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro));
             this.btnSalvar = new System.Windows.Forms.Button();
             this.grpCategoria = new System.Windows.Forms.GroupBox();
             this.cmbSubGrupo = new System.Windows.Forms.ComboBox();

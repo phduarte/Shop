@@ -50,6 +50,7 @@
     <Compile Include="Infrastructure\UsuarioRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AccessServices.cs" />
+    <Compile Include="Sessao.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Gadz.Shop.Commom.Model\Gadz.Shop.Commom.Model.csproj">

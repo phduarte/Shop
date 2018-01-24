@@ -2,9 +2,9 @@
 
 namespace Gadz.Shop.Admin.Forms.Estoque
 {
-    public partial class Excluir : Form
+    public partial class Saida : Form
     {
-        public Excluir() {
+        public Saida() {
             InitializeComponent();
         }
     }

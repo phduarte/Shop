@@ -1,9 +1,8 @@
-﻿using Gadz.Shop.Access.Forms;
-using Gadz.Shop.Access.Services;
+﻿using Gadz.Shop.Access.Services;
 using Gadz.Shop.Commom.Forms;
 using System.Windows.Forms;
 
-namespace Gadz.Shop.Store {
+namespace Gadz.Shop.Access.Forms {
     public static class FormExtensions {
 
         public static void AbrirSeEstiverLogado(this MdiBaseForm form, Form mdi) {

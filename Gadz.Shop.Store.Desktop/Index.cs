@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using Gadz.Shop.Access.DomainModel.Usuarios;
 using Gadz.Shop.Access.Services;
+using Gadz.Shop.Access.Forms;
 using Gadz.Shop.Commom.Forms;
 
 namespace Gadz.Shop.Store {
@@ -22,7 +23,7 @@ namespace Gadz.Shop.Store {
         }
 
         private void AdicionarEstoque(object sender, EventArgs e) {
-            new Admin.Forms.Estoque.Adicionar().AbrirSeEstiverLogado(_currentMdiParent);
+            new Admin.Forms.Estoque.Entrada().AbrirSeEstiverLogado(_currentMdiParent);
         }
 
         private void PesquisarFornecedor(object sender, EventArgs e) {

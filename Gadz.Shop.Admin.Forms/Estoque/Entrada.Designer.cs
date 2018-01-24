@@ -1,6 +1,6 @@
 ﻿namespace Gadz.Shop.Admin.Forms.Estoque
 {
-    partial class Adicionar
+    partial class Entrada
     {
         /// <summary>
         /// Required designer variable.

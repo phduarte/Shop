@@ -1,6 +1,6 @@
 ﻿namespace Gadz.Shop.Admin.Forms.Estoque
 {
-    partial class Excluir
+    partial class Saida
     {
         /// <summary>
         /// Required designer variable.
