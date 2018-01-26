@@ -45,79 +45,73 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdicionarDinheiro.cs">
+    <Compile Include="Enderecos\Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdicionarDinheiro.designer.cs">
-      <DependentUpon>AdicionarDinheiro.cs</DependentUpon>
+    <Compile Include="Enderecos\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastrarVenda.cs">
+    <Compile Include="Enderecos\Pesquisa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastrarVenda.designer.cs">
-      <DependentUpon>CadastrarVenda.cs</DependentUpon>
+    <Compile Include="Enderecos\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
     </Compile>
-    <Compile Include="EscolherAcao.cs">
+    <Compile Include="Vendas\Carrinho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EscolherAcao.designer.cs">
-      <DependentUpon>EscolherAcao.cs</DependentUpon>
+    <Compile Include="Vendas\Carrinho.designer.cs">
+      <DependentUpon>Carrinho.cs</DependentUpon>
     </Compile>
-    <Compile Include="FinalizarVenda.cs">
+    <Compile Include="Clientes\Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FinalizarVenda.designer.cs">
-      <DependentUpon>FinalizarVenda.cs</DependentUpon>
+    <Compile Include="Clientes\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
-    <Compile Include="IniciarVenda.cs">
+    <Compile Include="Clientes\Credito.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IniciarVenda.designer.cs">
-      <DependentUpon>IniciarVenda.cs</DependentUpon>
+    <Compile Include="Clientes\Credito.Designer.cs">
+      <DependentUpon>Credito.cs</DependentUpon>
     </Compile>
-    <Compile Include="PesquisarVenda.cs">
+    <Compile Include="Clientes\Pesquisa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PesquisarVenda.designer.cs">
-      <DependentUpon>PesquisarVenda.cs</DependentUpon>
+    <Compile Include="Clientes\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
     </Compile>
-    <Compile Include="VendaConcluir__.cs">
+    <Compile Include="Vendas\Nova.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VendaConcluir__.designer.cs">
-      <DependentUpon>VendaConcluir__.cs</DependentUpon>
+    <Compile Include="Vendas\Nova.Designer.cs">
+      <DependentUpon>Nova.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="Precos\Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="Precos\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdicionarDinheiro.resx">
-      <DependentUpon>AdicionarDinheiro.cs</DependentUpon>
+    <EmbeddedResource Include="Enderecos\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastrarVenda.resx">
-      <DependentUpon>CadastrarVenda.cs</DependentUpon>
+    <EmbeddedResource Include="Vendas\Carrinho.resx">
+      <DependentUpon>Carrinho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EscolherAcao.resx">
-      <DependentUpon>EscolherAcao.cs</DependentUpon>
+    <EmbeddedResource Include="Clientes\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FinalizarVenda.resx">
-      <DependentUpon>FinalizarVenda.cs</DependentUpon>
+    <EmbeddedResource Include="Clientes\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IniciarVenda.resx">
-      <DependentUpon>IniciarVenda.cs</DependentUpon>
+    <EmbeddedResource Include="Vendas\Nova.resx">
+      <DependentUpon>Nova.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PesquisarVenda.resx">
-      <DependentUpon>PesquisarVenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VendaConcluir__.resx">
-      <DependentUpon>VendaConcluir__.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="Precos\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -142,9 +136,21 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Gadz.Shop.Access.Forms\Gadz.Shop.Access.Forms.csproj">
+      <Project>{da187c91-aadc-490f-a95a-449ed815a066}</Project>
+      <Name>Gadz.Shop.Access.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Access\Gadz.Shop.Access.csproj">
+      <Project>{C5383832-13CF-4EC3-91CC-B6495AC9AAD7}</Project>
+      <Name>Gadz.Shop.Access</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Gadz.Shop.Commom.Forms\Gadz.Shop.Commom.Forms.csproj">
       <Project>{fb27c6e3-8f95-476d-823f-2fa460610b6a}</Project>
       <Name>Gadz.Shop.Commom.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Model\Gadz.Shop.Commom.Model.csproj">
+      <Project>{51BE1507-C09A-4763-9B08-A109DD46B06F}</Project>
+      <Name>Gadz.Shop.Commom.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gadz.Shop.Commom.Resources\Gadz.Shop.Commom.Resources.csproj">
       <Project>{e58c2eea-71be-4452-a62f-197c7aa2c87e}</Project>

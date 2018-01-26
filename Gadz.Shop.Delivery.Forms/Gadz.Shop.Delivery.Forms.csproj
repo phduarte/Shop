@@ -45,11 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgendarEntrega.cs">
+    <Compile Include="Vendas\AgendarEntrega.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AgendarEntrega.designer.cs">
+    <Compile Include="Vendas\AgendarEntrega.designer.cs">
       <DependentUpon>AgendarEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enderecos\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enderecos\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -59,6 +65,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Enderecos\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,9 +94,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Gadz.Shop.Access\Gadz.Shop.Access.csproj">
+      <Project>{C5383832-13CF-4EC3-91CC-B6495AC9AAD7}</Project>
+      <Name>Gadz.Shop.Access</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Gadz.Shop.Commom.Forms\Gadz.Shop.Commom.Forms.csproj">
       <Project>{FB27C6E3-8F95-476D-823F-2FA460610B6A}</Project>
       <Name>Gadz.Shop.Commom.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Model\Gadz.Shop.Commom.Model.csproj">
+      <Project>{51BE1507-C09A-4763-9B08-A109DD46B06F}</Project>
+      <Name>Gadz.Shop.Commom.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Resources\Gadz.Shop.Commom.Resources.csproj">
+      <Project>{e58c2eea-71be-4452-a62f-197c7aa2c87e}</Project>
+      <Name>Gadz.Shop.Commom.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Delivery\Gadz.Shop.Delivery.csproj">
+      <Project>{d59059be-4c57-47b3-9cfb-e3098baa8a70}</Project>
+      <Name>Gadz.Shop.Delivery</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

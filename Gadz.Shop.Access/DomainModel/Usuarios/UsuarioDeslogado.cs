@@ -2,7 +2,8 @@
 using Gadz.Shop.Commom.Model;
 
 namespace Gadz.Shop.Access.DomainModel.Usuarios {
-    public class UsuarioDeslogado : Entity, IUsuario {
+
+    internal class UsuarioDeslogado : Entity, IUsuario {
 
         public string Login => "undefined";
 

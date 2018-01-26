@@ -2,7 +2,7 @@
 
 namespace Gadz.Shop.Access.DomainModel.Usuarios {
 
-    public class Usuario : Entity, IUsuario {
+    internal class Usuario : Entity, IUsuario {
 
         public string Login { get; set; }
         public string Senha { get; set; }

@@ -40,7 +40,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="By.cs" />
+    <Compile Include="Data\ClienteRepository.cs" />
+    <Compile Include="Data\ProdutoRepository.cs" />
+    <Compile Include="Data\VendaRepository.cs" />
+    <Compile Include="DomainModel\Clientes\Cliente.cs" />
+    <Compile Include="DomainModel\Clientes\ClienteServices.cs" />
+    <Compile Include="DomainModel\Clientes\ICliente.cs" />
+    <Compile Include="DomainModel\Clientes\IClienteRepository.cs" />
+    <Compile Include="DomainModel\Enderecos\IEndereco.cs" />
+    <Compile Include="DomainModel\Precos\IPreco.cs" />
+    <Compile Include="DomainModel\Produtos\IProduto.cs" />
+    <Compile Include="DomainModel\Produtos\IProdutoRepository.cs" />
+    <Compile Include="DomainModel\Produtos\Produto.cs" />
+    <Compile Include="DomainModel\Produtos\ProdutoServices.cs" />
+    <Compile Include="DomainModel\Vendas\IVenda.cs" />
+    <Compile Include="DomainModel\Vendas\IVendaRepository.cs" />
+    <Compile Include="DomainModel\Vendas\StatusVenda.cs" />
+    <Compile Include="DomainModel\Vendas\Venda.cs" />
+    <Compile Include="DomainModel\Vendas\VendaServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SellingServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Gadz.Shop.Commom.Model\Gadz.Shop.Commom.Model.csproj">
@@ -48,5 +68,6 @@
       <Name>Gadz.Shop.Commom.Model</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

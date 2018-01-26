@@ -10,7 +10,7 @@ namespace Gadz.Shop.Access {
 
         #region fields
 
-        readonly Services.AccessServices _service;
+        readonly AccessServices _service;
         private static bool logged;
         private static bool alive;
 
@@ -37,7 +37,7 @@ namespace Gadz.Shop.Access {
         #region constructors
 
         public Session() {
-            _service = new Services.AccessServices();
+            _service = new AccessServices();
             Usuario = new UsuarioDeslogado();
             alive = true;
             Listen();

@@ -1,5 +1,4 @@
-﻿using Gadz.Shop.Access.Services;
-using Gadz.Shop.Commom.Forms;
+﻿using Gadz.Shop.Commom.Forms;
 using System.Windows.Forms;
 
 namespace Gadz.Shop.Access.Forms {
@@ -24,6 +23,16 @@ namespace Gadz.Shop.Access.Forms {
                 var login = new Login();
                 login.FormClosed += (sender, e) => { form.Show(); };
                 login.ShowInside(mdi);
+            }
+        }
+
+        public static void AbrirSeEstiverLogado(this Form form) {
+            if (new AccessServices().CurrentUserLogged().Logado) {
+                form.Show();
+            } else {
+                var login = new Login();
+                login.FormClosed += (sender, e) => { form.Show(); };
+                login.Show();
             }
         }
     }

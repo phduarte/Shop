@@ -3,8 +3,8 @@ using System.Windows.Forms;
 
 namespace Gadz.Shop.Commom.Forms.Controls
 {
-    public partial class Loading : Form
-    {
+    public partial class Loading : Form {
+
         public Loading() {
             InitializeComponent();
         }

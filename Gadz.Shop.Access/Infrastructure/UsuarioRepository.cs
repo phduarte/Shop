@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 
 namespace Gadz.Shop.Access.Infrastructure {
-    public class UsuarioRepository : IUsuarioRepository {
+
+    internal class UsuarioRepository : IUsuarioRepository {
 
         IList<IUsuario> _usuarios = new List<IUsuario> {
             new Usuario{ Login = "admin", Senha = "admin", Nome = "Administrador", Perfil = Perfil.Diretor, Cargo = "ADMINISTRADOR", Email = "adm@adm.com.br" }
@@ -24,7 +25,7 @@ namespace Gadz.Shop.Access.Infrastructure {
         }
 
         public IUsuario Get(Identity id) {
-            return _usuarios.First(x => x.Id == id);
+            return _usuarios.First(x => x.Id.Equals(id));
         }
 
         public void Remove(Identity id) {

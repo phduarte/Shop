@@ -125,10 +125,6 @@
       <Project>{c5383832-13cf-4ec3-91cc-b6495ac9aad7}</Project>
       <Name>Gadz.Shop.Access</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Gadz.Shop.Admin.Forms\Gadz.Shop.Admin.Forms.csproj">
-      <Project>{bc3822ec-75b5-4c51-b1c1-1ec6df5c8020}</Project>
-      <Name>Gadz.Shop.Admin.Forms</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Gadz.Shop.Billing.Forms\Gadz.Shop.Billing.Forms.csproj">
       <Project>{45b790fd-409f-48af-96c8-6d845ac17021}</Project>
       <Name>Gadz.Shop.Billing.Forms</Name>
@@ -160,6 +156,14 @@
     <ProjectReference Include="..\Gadz.Shop.Delivery\Gadz.Shop.Delivery.csproj">
       <Project>{d59059be-4c57-47b3-9cfb-e3098baa8a70}</Project>
       <Name>Gadz.Shop.Delivery</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.HR.Forms\Gadz.Shop.HR.Forms.csproj">
+      <Project>{28387a7d-aaae-4bae-91d3-4e7d54fccb36}</Project>
+      <Name>Gadz.Shop.HR.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.HR\Gadz.Shop.HR.csproj">
+      <Project>{65586289-6e9d-4b37-ab22-942fe078c336}</Project>
+      <Name>Gadz.Shop.HR</Name>
     </ProjectReference>
     <ProjectReference Include="..\Gadz.Shop.Selling.Forms\Gadz.Shop.Selling.Forms.csproj">
       <Project>{309d55be-8f94-4060-990d-04a78b22b987}</Project>

@@ -45,14 +45,104 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Categorias\Cadastro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Categorias\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque\Entrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque\Entrada.Designer.cs">
+      <DependentUpon>Entrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estoque\Saida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estoque\Saida.Designer.cs">
+      <DependentUpon>Saida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fabricantes\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fabricantes\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fabricantes\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fabricantes\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedores\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedores\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kits\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kits\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\Cadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\Cadastro.Designer.cs">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produtos\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Categorias\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estoque\Entrada.resx">
+      <DependentUpon>Entrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fabricantes\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fabricantes\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedores\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kits\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\Cadastro.resx">
+      <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produtos\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -74,6 +164,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Forms\Gadz.Shop.Commom.Forms.csproj">
+      <Project>{FB27C6E3-8F95-476D-823F-2FA460610B6A}</Project>
+      <Name>Gadz.Shop.Commom.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Resources\Gadz.Shop.Commom.Resources.csproj">
+      <Project>{e58c2eea-71be-4452-a62f-197c7aa2c87e}</Project>
+      <Name>Gadz.Shop.Commom.Resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

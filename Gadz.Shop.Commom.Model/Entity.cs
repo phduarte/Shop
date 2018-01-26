@@ -2,7 +2,7 @@
     public abstract class Entity : IEntity {
 
         public Identity Id { get; private set; }
-        public bool Exists { get; private set; }
+        public bool Exists { get; set; }
 
         protected Entity(Identity id) {
             Id = id;

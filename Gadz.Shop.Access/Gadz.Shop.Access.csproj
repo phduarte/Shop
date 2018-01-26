@@ -40,7 +40,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DomainModel\Permissoes\Permissao.cs" />
     <Compile Include="DomainModel\Usuarios\IUsuario.cs" />
     <Compile Include="DomainModel\Usuarios\IUsuarioRepository.cs" />
     <Compile Include="DomainModel\Usuarios\Perfil.cs" />
@@ -49,7 +48,7 @@
     <Compile Include="DomainModel\Usuarios\UsuarioDeslogado.cs" />
     <Compile Include="Infrastructure\UsuarioRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\AccessServices.cs" />
+    <Compile Include="AccessServices.cs" />
     <Compile Include="Sessao.cs" />
   </ItemGroup>
   <ItemGroup>

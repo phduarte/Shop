@@ -4,24 +4,21 @@ using System;
 using System.Collections.Generic;
 
 namespace Gadz.Shop.Billing.Data {
-    public class PagamentoRepository : IPagamentoRepository {
-        public void Add(Pagamento entity) {
+    internal class PagamentoRepository : IPagamentoRepository {
+
+        public void Add(IPagamento entity) {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Pagamento> GetAll() {
+        public IEnumerable<IPagamento> GetAll() {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Pagamento> Find() {
+        public IEnumerable<IPagamento> Find(Func<IPagamento, bool> criterio) {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Pagamento> Find(Func<Pagamento, bool> criterio) {
-            throw new NotImplementedException();
-        }
-
-        public Pagamento Get(Identity id) {
+        public IPagamento Get(Identity id) {
             throw new NotImplementedException();
         }
 
@@ -29,7 +26,7 @@ namespace Gadz.Shop.Billing.Data {
             throw new NotImplementedException();
         }
 
-        public void Save(Pagamento entity) {
+        public void Save(IPagamento entity) {
             throw new NotImplementedException();
         }
     }

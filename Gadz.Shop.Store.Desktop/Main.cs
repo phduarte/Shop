@@ -1,11 +1,11 @@
-﻿using Gadz.Shop.Access.DomainModel.Usuarios;
-using Gadz.Shop.Access.Services;
+﻿using Gadz.Shop.Access;
+using Gadz.Shop.Access.DomainModel.Usuarios;
 using System;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Fabricantes = Gadz.Shop.Admin.Forms.Fabricantes;
+using Fabricantes = Gadz.Shop.Stock.Forms.Fabricantes;
 
 namespace Gadz.Shop.Store {
     public partial class Main : Form {
@@ -193,33 +193,33 @@ namespace Gadz.Shop.Store {
 
         //Gerente
         private void AddFornecedor(object sender, EventArgs e) {
-            new Admin.Forms.Fornecedores.Cadastro().ShowInside(this);
+            new Stock.Forms.Fornecedores.Cadastro().ShowInside(this);
         }
 
         //Estoquista
         private void AddEstoque(object sender, EventArgs e) {
-            new Admin.Forms.Estoque.Entrada().ShowInside(this);
+            new Stock.Forms.Estoque.Entrada().ShowInside(this);
         }
 
         //
         private void AddCategoria(object sender, EventArgs e) {
-            new Admin.Forms.Categorias.Cadastro().ShowInside(this);
+            new Stock.Forms.Categorias.Cadastro().ShowInside(this);
         }
 
         private void AddGrupo(object sender, EventArgs e) {
-            new Admin.Forms.Kits.Cadastro().Show();
+            new Stock.Forms.Kits.Cadastro().Show();
         }
 
         private void AddCliente(object sender, EventArgs e) {
-            new Admin.Forms.Clientes.Cadastro().ShowInside(this);
+            new Selling.Forms.Clientes.Cadastro().ShowInside(this);
         }
 
         private void AddFabricante(object sender, EventArgs e) {
-            new Admin.Forms.Fabricantes.Cadastro().ShowInside(this);
+            new Stock.Forms.Fabricantes.Cadastro().ShowInside(this);
         }
 
         private void AddFuncionario(object sender, EventArgs e) {
-            new Admin.Forms.Funcionarios.Cadastro().ShowInside(this);
+            new HR.Forms.Funcionarios.Cadastro().ShowInside(this);
         }
 
         private void AddCalendario(object sender, EventArgs e) {
@@ -231,14 +231,15 @@ namespace Gadz.Shop.Store {
 
         private void AddVenda(object sender, EventArgs e) {
             //new Billing .frmCadastrarVenda().ShowDialog();
+            new Selling.Forms.Vendas.Nova().ShowInside(this);
         }
 
         private void AddProduto(object sender, EventArgs e) {
-            new Admin.Forms.Produtos.Cadastro().ShowInside(this);
+            new Stock.Forms.Produtos.Cadastro().ShowInside(this);
         }
 
         private void AddPreco(object sender, EventArgs e) {
-            new Admin.Forms.Precos.Cadastro().Show();
+            new Selling.Forms.Precos.Cadastro().Show();
         }
 
         //Caixa
@@ -314,19 +315,19 @@ namespace Gadz.Shop.Store {
         }
 
         private void PesquisaProdutos(object sender, EventArgs e) {
-            new Admin.Forms.Produtos.Pesquisa().ShowInside(this);
+            new Stock.Forms.Produtos.Pesquisa().ShowInside(this);
         }
 
         private void PesquisaClientes(object sender, EventArgs e) {
-            new Admin.Forms.Clientes.Pesquisa().ShowInside(this);
+            new Selling.Forms.Clientes.Pesquisa().ShowInside(this);
         }
 
         private void PesquisaFuncionarios(object sender, EventArgs e) {
-            new Admin.Forms.Funcionarios.Pesquisa().ShowInside(this);
+            new HR.Forms.Funcionarios.Pesquisa().ShowInside(this);
         }
 
         private void PesquisaFornecedores(object sender, EventArgs e) {
-            new Admin.Forms.Fornecedores.Pesquisa().ShowInside(this);
+            new Stock.Forms.Fornecedores.Pesquisa().ShowInside(this);
         }
 
         private void PesquisaFabricante(object sender, EventArgs e) {

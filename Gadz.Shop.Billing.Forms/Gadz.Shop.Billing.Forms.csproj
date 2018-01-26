@@ -45,17 +45,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ContasPagar.cs">
+    <Compile Include="Vendas\AdicionarDinheiro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ContasPagar.designer.cs">
+    <Compile Include="Vendas\AdicionarDinheiro.designer.cs">
+      <DependentUpon>AdicionarDinheiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compras\ContasPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compras\ContasPagar.designer.cs">
       <DependentUpon>ContasPagar.cs</DependentUpon>
     </Compile>
-    <Compile Include="ContasReceber.cs">
+    <Compile Include="Vendas\ContasReceber.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ContasReceber.designer.cs">
+    <Compile Include="Vendas\ContasReceber.designer.cs">
       <DependentUpon>ContasReceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vendas\FinalizarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas\FinalizarVenda.designer.cs">
+      <DependentUpon>FinalizarVenda.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -63,16 +75,37 @@
     <Compile Include="Main.designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vendas\PesquisarVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas\PesquisarVenda.designer.cs">
+      <DependentUpon>PesquisarVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="ContasPagar.resx">
+    <Compile Include="Vendas\VendaConcluir__.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vendas\VendaConcluir__.designer.cs">
+      <DependentUpon>VendaConcluir__.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vendas\AdicionarDinheiro.resx">
+      <DependentUpon>AdicionarDinheiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compras\ContasPagar.resx">
       <DependentUpon>ContasPagar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ContasReceber.resx">
+    <EmbeddedResource Include="Vendas\ContasReceber.resx">
       <DependentUpon>ContasReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas\FinalizarVenda.resx">
+      <DependentUpon>FinalizarVenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vendas\PesquisarVenda.resx">
+      <DependentUpon>PesquisarVenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +116,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vendas\VendaConcluir__.resx">
+      <DependentUpon>VendaConcluir__.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -97,6 +133,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Gadz.Shop.Access.Forms\Gadz.Shop.Access.Forms.csproj">
+      <Project>{da187c91-aadc-490f-a95a-449ed815a066}</Project>
+      <Name>Gadz.Shop.Access.Forms</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Gadz.Shop.Access\Gadz.Shop.Access.csproj">
       <Project>{c5383832-13cf-4ec3-91cc-b6495ac9aad7}</Project>
       <Name>Gadz.Shop.Access</Name>
@@ -116,6 +156,10 @@
     <ProjectReference Include="..\Gadz.Shop.Commom.Resources\Gadz.Shop.Commom.Resources.csproj">
       <Project>{e58c2eea-71be-4452-a62f-197c7aa2c87e}</Project>
       <Name>Gadz.Shop.Commom.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Commom.Utils\Gadz.Shop.Commom.Utils.csproj">
+      <Project>{6DB73FF5-B44C-476B-9747-E593E4E6B1B4}</Project>
+      <Name>Gadz.Shop.Commom.Utils</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

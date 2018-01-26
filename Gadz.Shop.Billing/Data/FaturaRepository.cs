@@ -4,8 +4,8 @@ using System;
 using System.Collections.Generic;
 
 namespace Gadz.Shop.Billing.Data {
-    public class FaturaRepository : IFaturaRepository {
-        public void Add(Fatura entity) {
+    internal class FaturaRepository : IFaturaRepository {
+        public void Add(IFatura entity) {
             //  string sql;
 
             //  sql = "exec sp_contas_pagar "
@@ -21,15 +21,15 @@ namespace Gadz.Shop.Billing.Data {
             //      MessageBox.Show(null, "Erro ao cadastrar conta.", Program.Name);
         }
 
-        public IEnumerable<Fatura> GetAll() {
+        public IEnumerable<IFatura> GetAll() {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Fatura> Find(Func<Fatura, bool> criterio) {
+        public IEnumerable<IFatura> Find(Func<IFatura, bool> criterio) {
             throw new NotImplementedException();
         }
 
-        public Fatura Get(Identity id) {
+        public IFatura Get(Identity id) {
             throw new NotImplementedException();
         }
 
@@ -37,7 +37,7 @@ namespace Gadz.Shop.Billing.Data {
             throw new NotImplementedException();
         }
 
-        public void Save(Fatura entity) {
+        public void Save(IFatura entity) {
 
             //  string sql;
 

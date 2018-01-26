@@ -263,6 +263,10 @@
       <Project>{d59059be-4c57-47b3-9cfb-e3098baa8a70}</Project>
       <Name>Gadz.Shop.Delivery</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Gadz.Shop.Domain\Gadz.Shop.Domain.csproj">
+      <Project>{16bc0e4d-264e-4865-9d36-2f7164ccce81}</Project>
+      <Name>Gadz.Shop.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Gadz.Shop.Selling\Gadz.Shop.Selling.csproj">
       <Project>{28bae424-8685-471a-a972-b4be512f5ed1}</Project>
       <Name>Gadz.Shop.Selling</Name>
