@@ -221,7 +221,7 @@ namespace Gadz.Shop.Selling.Forms.Clientes {
         }
 
         private void PesquisarEndereco(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Enderecos.Pesquisa(txtCEP).ShowInside(_currentMdiParent);
+            new Enderecos.Pesquisa(txtCEP).ShowInside(MdiCurrent);
         }
 
         private void ListarClientes(object sender, EventArgs e) {

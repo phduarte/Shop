@@ -1,11 +1,11 @@
-﻿using Gadz.Shop.Billing.Model.Faturas;
+﻿using Gadz.Shop.Billing.DomainModel.Compras;
 using Gadz.Shop.Commom.Model;
 using System;
 using System.Collections.Generic;
 
 namespace Gadz.Shop.Billing.Data {
-    internal class FaturaRepository : IFaturaRepository {
-        public void Add(IFatura entity) {
+    internal class CompraRepository : ICompraRepository {
+        public void Add(ICompra entity) {
             //  string sql;
 
             //  sql = "exec sp_contas_pagar "
@@ -21,15 +21,15 @@ namespace Gadz.Shop.Billing.Data {
             //      MessageBox.Show(null, "Erro ao cadastrar conta.", Program.Name);
         }
 
-        public IEnumerable<IFatura> GetAll() {
+        public IEnumerable<ICompra> GetAll() {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<IFatura> Find(Func<IFatura, bool> criterio) {
+        public IEnumerable<ICompra> Find(Func<ICompra, bool> criterio) {
             throw new NotImplementedException();
         }
 
-        public IFatura Get(Identity id) {
+        public ICompra Get(Identity id) {
             throw new NotImplementedException();
         }
 
@@ -37,7 +37,7 @@ namespace Gadz.Shop.Billing.Data {
             throw new NotImplementedException();
         }
 
-        public void Save(IFatura entity) {
+        public void Save(ICompra entity) {
 
             //  string sql;
 

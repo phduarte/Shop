@@ -1,6 +1,5 @@
 ﻿namespace Gadz.Shop.Stock.Forms.Categorias {
-    partial class Cadastro
-    {
+    partial class Cadastro {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -10,10 +9,8 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
+        protected override void Dispose(bool disposing) {
+            if (disposing && (components != null)) {
                 components.Dispose();
             }
             base.Dispose(disposing);
@@ -25,129 +22,97 @@
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
-        {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro));
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.grpCategoria = new System.Windows.Forms.GroupBox();
-            this.cmbSubGrupo = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cmbCategoria = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbGrupo = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+        private void InitializeComponent() {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.grpCategoria.SuspendLayout();
+            this.chkAtivo = new System.Windows.Forms.CheckBox();
+            this.lnkExcluir = new System.Windows.Forms.LinkLabel();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.chkAtivo);
+            this.panel1.Controls.Add(this.lnkExcluir);
+            this.panel1.Controls.Add(this.btnSalvar);
+            this.panel1.Controls.Add(this.txtNome);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(42, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(250, 250);
+            this.panel1.TabIndex = 0;
+            // 
+            // chkAtivo
+            // 
+            this.chkAtivo.AutoSize = true;
+            this.chkAtivo.Checked = true;
+            this.chkAtivo.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAtivo.Location = new System.Drawing.Point(25, 92);
+            this.chkAtivo.Name = "chkAtivo";
+            this.chkAtivo.Size = new System.Drawing.Size(50, 17);
+            this.chkAtivo.TabIndex = 4;
+            this.chkAtivo.Text = "Ativo";
+            this.chkAtivo.UseVisualStyleBackColor = true;
+            // 
+            // lnkExcluir
+            // 
+            this.lnkExcluir.AutoSize = true;
+            this.lnkExcluir.Location = new System.Drawing.Point(22, 133);
+            this.lnkExcluir.Name = "lnkExcluir";
+            this.lnkExcluir.Size = new System.Drawing.Size(38, 13);
+            this.lnkExcluir.TabIndex = 3;
+            this.lnkExcluir.TabStop = true;
+            this.lnkExcluir.Text = "Excluir";
+            // 
             // btnSalvar
             // 
-            resources.ApplyResources(this.btnSalvar, "btnSalvar");
+            this.btnSalvar.Location = new System.Drawing.Point(128, 123);
             this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(89, 33);
+            this.btnSalvar.TabIndex = 2;
+            this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.Salvar);
             // 
-            // grpCategoria
+            // txtNome
             // 
-            this.grpCategoria.Controls.Add(this.cmbSubGrupo);
-            this.grpCategoria.Controls.Add(this.label4);
-            this.grpCategoria.Controls.Add(this.cmbCategoria);
-            this.grpCategoria.Controls.Add(this.label3);
-            this.grpCategoria.Controls.Add(this.cmbGrupo);
-            this.grpCategoria.Controls.Add(this.label1);
-            resources.ApplyResources(this.grpCategoria, "grpCategoria");
-            this.grpCategoria.Name = "grpCategoria";
-            this.grpCategoria.TabStop = false;
-            // 
-            // cmbSubGrupo
-            // 
-            this.cmbSubGrupo.DisplayMember = "categoria";
-            this.cmbSubGrupo.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbSubGrupo, "cmbSubGrupo");
-            this.cmbSubGrupo.Name = "cmbSubGrupo";
-            this.cmbSubGrupo.ValueMember = "categoria";
-            this.cmbSubGrupo.DropDown += new System.EventHandler(this.ListarSubGrupos);
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // cmbCategoria
-            // 
-            this.cmbCategoria.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbCategoria, "cmbCategoria");
-            this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Sorted = true;
-            this.cmbCategoria.DropDown += new System.EventHandler(this.ListarCategorias);
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // cmbGrupo
-            // 
-            this.cmbGrupo.DisplayMember = "macro";
-            this.cmbGrupo.FormattingEnabled = true;
-            resources.ApplyResources(this.cmbGrupo, "cmbGrupo");
-            this.cmbGrupo.Name = "cmbGrupo";
-            this.cmbGrupo.ValueMember = "macro";
-            this.cmbGrupo.DropDown += new System.EventHandler(this.ListarGrupos);
+            this.txtNome.Location = new System.Drawing.Point(25, 54);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(192, 20);
+            this.txtNome.TabIndex = 1;
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 38);
             this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nome";
             // 
-            // label2
+            // Cadastro
             // 
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.Gray;
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
-            // panel1
-            // 
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Controls.Add(this.grpCategoria);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btnSalvar);
-            this.panel1.Name = "panel1";
-            // 
-            // Cadastrar
-            // 
-            resources.ApplyResources(this, "$this");
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(968, 544);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "Cadastrar";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.grpCategoria.ResumeLayout(false);
-            this.grpCategoria.PerformLayout();
+            this.Name = "Cadastro";
+            this.Text = "Cadastro";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.GroupBox grpCategoria;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbGrupo;
-        private System.Windows.Forms.ComboBox cmbSubGrupo;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cmbCategoria;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox chkAtivo;
+        private System.Windows.Forms.LinkLabel lnkExcluir;
     }
 }

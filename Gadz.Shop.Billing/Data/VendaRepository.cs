@@ -1,24 +1,24 @@
-﻿using Gadz.Shop.Billing.Model.Pagamentos;
+﻿using Gadz.Shop.Billing.Model.Vendas;
 using Gadz.Shop.Commom.Model;
 using System;
 using System.Collections.Generic;
 
 namespace Gadz.Shop.Billing.Data {
-    internal class PagamentoRepository : IPagamentoRepository {
+    internal class VendaRepository : IVendaRepository {
 
-        public void Add(IPagamento entity) {
+        public void Add(IVenda entity) {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<IPagamento> GetAll() {
+        public IEnumerable<IVenda> GetAll() {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<IPagamento> Find(Func<IPagamento, bool> criterio) {
+        public IEnumerable<IVenda> Find(Func<IVenda, bool> criterio) {
             throw new NotImplementedException();
         }
 
-        public IPagamento Get(Identity id) {
+        public IVenda Get(Identity id) {
             throw new NotImplementedException();
         }
 
@@ -26,7 +26,7 @@ namespace Gadz.Shop.Billing.Data {
             throw new NotImplementedException();
         }
 
-        public void Save(IPagamento entity) {
+        public void Save(IVenda entity) {
             throw new NotImplementedException();
         }
     }

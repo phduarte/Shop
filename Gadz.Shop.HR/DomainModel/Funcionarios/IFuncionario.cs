@@ -1,4 +1,5 @@
 ﻿using Gadz.Shop.Commom.Model;
+using Gadz.Shop.HR.DomainModel.Holerites;
 using Gadz.Shop.HR.DomainModel.Salarios;
 using Gadz.Shop.HR.DomainModel.Situacoes;
 using System;
@@ -14,6 +15,7 @@ namespace Gadz.Shop.HR.DomainModel.Funcionarios {
         IList<ISalario> HistoricoSalarios { get; }
         IList<ISituacao> HistoricoSituacoes { get; }
         IList<Telefone> Telefones { get; }
+        IList<IHolerite> Holerites { get; }
         string Cargo { get; }
 
         void AlterarSalario(ISalario salario);

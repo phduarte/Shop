@@ -132,7 +132,7 @@ namespace Gadz.Shop.HR.Forms.Salarios {
         }
 
         private void PesquisarFuncionarios(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Funcionarios.Pesquisa().ShowInside(_currentMdiParent);
+            new Funcionarios.Pesquisa().ShowInside(MdiCurrent);
         }
 
         private bool Valida() {

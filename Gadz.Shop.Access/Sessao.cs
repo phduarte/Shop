@@ -36,7 +36,7 @@ namespace Gadz.Shop.Access {
 
         #region constructors
 
-        public Session() {
+        private Session() {
             _service = new AccessServices();
             Usuario = new UsuarioDeslogado();
             alive = true;
@@ -94,6 +94,10 @@ namespace Gadz.Shop.Access {
                     Thread.Sleep(250);
                 }
             });
+        }
+
+        public static Session Create() {
+            return new Session();
         }
     }
 }

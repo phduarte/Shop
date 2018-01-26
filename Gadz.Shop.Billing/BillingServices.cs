@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using Gadz.Shop.Billing.DomainModel.Clientes;
 using Gadz.Shop.Billing.DomainModel.Fornecedores;
-using Gadz.Shop.Billing.Model.Faturas;
-using Gadz.Shop.Billing.Model.Pagamentos;
+using Gadz.Shop.Billing.DomainModel.Compras;
 using Gadz.Shop.Commom.Model;
 
 namespace Gadz.Shop.Billing {
     public class BillingServices : Singleton<BillingServices> {
 
-        public IPagamento PegarConta(Identity id) {
+        public ICompra PegarConta(Identity id) {
             throw new NotImplementedException();
         }
 
-        public void SalvarPagamento(IPagamento conta) {
+        public void SalvarPagamento(ICompra conta) {
             throw new NotImplementedException();
         }
 
@@ -25,7 +24,7 @@ namespace Gadz.Shop.Billing {
             throw new NotImplementedException();
         }
 
-        public IFatura PegarFatura(Identity id) {
+        public ICompra PegarFatura(Identity id) {
             throw new NotImplementedException();
         }
 
@@ -33,7 +32,7 @@ namespace Gadz.Shop.Billing {
             throw new NotImplementedException();
         }
 
-        public void SalvarFatura(IFatura fatura) {
+        public void SalvarFatura(ICompra fatura) {
             throw new NotImplementedException();
         }
     }

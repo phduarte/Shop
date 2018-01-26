@@ -25,6 +25,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pesquisa));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cmbCidade = new System.Windows.Forms.ComboBox();
@@ -93,8 +94,8 @@
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEndereco.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtEndereco.Location = new System.Drawing.Point(89, 57);
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(248, 20);
@@ -104,9 +105,9 @@
             // 
             this.dgLista.AllowUserToAddRows = false;
             this.dgLista.AllowUserToDeleteRows = false;
-            this.dgLista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgLista.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cep,
@@ -126,7 +127,7 @@
             this.dgLista.Location = new System.Drawing.Point(12, 127);
             this.dgLista.Name = "dgLista";
             this.dgLista.ReadOnly = true;
-            this.dgLista.Size = new System.Drawing.Size(633, 174);
+            this.dgLista.Size = new System.Drawing.Size(944, 278);
             this.dgLista.TabIndex = 11;
             this.dgLista.DoubleClick += new System.EventHandler(this.EnviarCEP);
             // 
@@ -239,7 +240,7 @@
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Image = global::Gadz.Shop.Commom.Resources.Properties.Resources.icon_search_24x24;
+            this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
             this.btnPesquisar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPesquisar.Location = new System.Drawing.Point(23, 38);
             this.btnPesquisar.Name = "btnPesquisar";
@@ -249,17 +250,16 @@
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.Procurar);
             // 
-            // frmEnderecoPesquisar
+            // Pesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(657, 313);
+            this.ClientSize = new System.Drawing.Size(968, 417);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgLista);
-            this.MinimumSize = new System.Drawing.Size(673, 38);
-            this.Name = "frmEnderecoPesquisar";
-            this.ShowIcon = false;
+            this.MinimumSize = new System.Drawing.Size(673, 39);
+            this.Name = "Pesquisa";
             this.Text = "Pesquisar Endereço";
             this.Load += new System.EventHandler(this.Abrir);
             this.groupBox1.ResumeLayout(false);

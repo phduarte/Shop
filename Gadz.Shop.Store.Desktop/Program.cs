@@ -10,7 +10,7 @@ namespace Gadz.Shop.Store {
             }
         }
 
-        public static Session Sessao = new Session();
+        public static Session Sessao = Session.Create();
 
         [STAThread]
         static void Main() {

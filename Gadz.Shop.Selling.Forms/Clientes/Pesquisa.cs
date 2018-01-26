@@ -39,7 +39,7 @@ namespace Gadz.Shop.Selling.Forms.Clientes {
         }
 
         private void Cadastrar(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Cadastro().ShowInside(_currentMdiParent);
+            new Cadastro().ShowInside(MdiCurrent);
         }
 
         private void Editar(object sender, EventArgs e) {
@@ -51,7 +51,7 @@ namespace Gadz.Shop.Selling.Forms.Clientes {
 
                 cpf = grid.SelectedRows[0].Cells["cpf"].Value.ToString();
 
-                new Cadastro(cpf).ShowInside(_currentMdiParent);
+                new Cadastro(cpf).ShowInside(MdiCurrent);
             }
         }
     }

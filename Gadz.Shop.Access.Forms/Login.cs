@@ -29,7 +29,7 @@ namespace Gadz.Shop.Access.Forms {
         }
 
         private void EsqueciSenha(object sender, LinkLabelLinkClickedEventArgs e) {
-            new RecuperacaoSenha().ShowInside(_currentMdiParent);
+            new RecuperacaoSenha().ShowInside(MdiCurrent);
         }
 
         private void Fechar(object sender, FormClosedEventArgs e) {

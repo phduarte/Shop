@@ -30,7 +30,7 @@ namespace Gadz.Shop.Stock.Forms.Fornecedores {
         }
 
         private void Cadastrar(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Cadastro().ShowInside(_currentMdiParent);
+            new Cadastro().ShowInside(MdiCurrent);
         }
     }
 }

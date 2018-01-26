@@ -41,16 +41,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BillingServices.cs" />
-    <Compile Include="Data\FaturaRepository.cs" />
-    <Compile Include="Data\PagamentoRepository.cs" />
+    <Compile Include="Data\CompraRepository.cs" />
+    <Compile Include="Data\VendaRepository.cs" />
     <Compile Include="DomainModel\Clientes\ICliente.cs" />
-    <Compile Include="DomainModel\Compras\Fatura.cs" />
-    <Compile Include="DomainModel\Compras\IFatura.cs" />
-    <Compile Include="DomainModel\Compras\IFaturaRepository.cs" />
+    <Compile Include="DomainModel\Compras\Compra.cs" />
+    <Compile Include="DomainModel\Compras\ICompra.cs" />
+    <Compile Include="DomainModel\Compras\ICompraRepository.cs" />
     <Compile Include="DomainModel\Fornecedores\IFornecedor.cs" />
-    <Compile Include="DomainModel\Vendas\IPagamento.cs" />
-    <Compile Include="DomainModel\Vendas\IPagamentoRepository.cs" />
-    <Compile Include="DomainModel\Vendas\Pagamento.cs" />
+    <Compile Include="DomainModel\Vendas\IVenda.cs" />
+    <Compile Include="DomainModel\Vendas\IVendaRepository.cs" />
+    <Compile Include="DomainModel\Vendas\Venda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

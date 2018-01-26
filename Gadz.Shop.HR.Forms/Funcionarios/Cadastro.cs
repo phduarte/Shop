@@ -456,7 +456,7 @@ namespace Gadz.Shop.HR.Forms.Funcionarios {
         }
 
         private void PesquisarEndereco(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Enderecos.Pesquisa(txtCEP).ShowInside(_currentMdiParent);
+            new Enderecos.Pesquisa(txtCEP).ShowInside(MdiCurrent);
         }
 
         private void SenhaPadrao(object sender, KeyEventArgs e) {

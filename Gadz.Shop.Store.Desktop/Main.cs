@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Fabricantes = Gadz.Shop.Stock.Forms.Fabricantes;
+using Gadz.Shop.Commom.Forms;
 
 namespace Gadz.Shop.Store {
     public partial class Main : Form {
@@ -79,9 +80,8 @@ namespace Gadz.Shop.Store {
         }
 
         void AlternarModuloCadastro(bool logado) {
-            mnCadastro.Visible = logado;
+            menuRh.Visible = logado;
             mnCadastroProdutos.Visible = logado;
-            mnCadastroClientes.Visible = logado;
             mnCadastroContas.Visible = logado;
             mnCadastroFuncionarios.Visible = logado;
         }
@@ -96,7 +96,6 @@ namespace Gadz.Shop.Store {
 
         void DefinirLayoutCaixa() {
             mnCadastroProdutos.Visible = false;
-            mnCadastroClientes.Visible = true;
             mnCadastroContas.Visible = false;
             mnCadastroFuncionarios.Visible = false;
 
@@ -115,7 +114,6 @@ namespace Gadz.Shop.Store {
         }
 
         void DefinirLayoutEstoquista() {
-            mnCadastroClientes.Visible = false;
             mnCadastroContas.Visible = false;
             mnCadastroFuncionarios.Visible = false;
             mnVendedor.Visible = false;
@@ -148,7 +146,7 @@ namespace Gadz.Shop.Store {
             mnLogout.Enabled = false;
 
             //
-            mnCadastro.Visible = false;
+            menuRh.Visible = false;
             mnEstoquista.Visible = false;
             mnVendedor.Visible = false;
             mnCaixa.Visible = false;
@@ -366,6 +364,6 @@ namespace Gadz.Shop.Store {
 
         private void ExibirTelaInicial(object sender, EventArgs e) {
             new Index().ShowInside(this);
-        }        
+        }
     }
 }

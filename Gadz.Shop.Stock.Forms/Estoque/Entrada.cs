@@ -119,11 +119,11 @@ namespace Gadz.Shop.Stock.Forms.Estoque {
         }
 
         private void CadastrarProduto(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Produtos.Cadastro().ShowInside(_currentMdiParent);
+            new Produtos.Cadastro().ShowInside(MdiCurrent);
         }
 
         private void CadastrarCategoria(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Categorias.Cadastro().ShowInside(_currentMdiParent);
+            new Categorias.Cadastro().ShowInside(MdiCurrent);
         }
     }
 }

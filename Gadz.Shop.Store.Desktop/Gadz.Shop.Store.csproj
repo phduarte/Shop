@@ -7,7 +7,7 @@
     <ProjectGuid>{4018E626-6A5C-463C-AC58-A0E6C0539311}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Gadz.Shop.Store</RootNamespace>
-    <AssemblyName>Store</AssemblyName>
+    <AssemblyName>Shop</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

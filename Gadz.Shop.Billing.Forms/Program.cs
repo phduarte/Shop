@@ -5,7 +5,7 @@ using System.Windows.Forms;
 namespace Gadz.Shop.Billing.Forms {
     static class Program {
 
-        public static Session Sessao = new Session();
+        public static Session Sessao = Session.Create();
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

@@ -27,6 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cadastro));
             this.grpIdentificacao = new System.Windows.Forms.GroupBox();
             this.lbSituacaoCPF = new System.Windows.Forms.Label();
             this.txtDataNascimento = new System.Windows.Forms.DateTimePicker();
@@ -500,7 +501,7 @@
             this.pnlMain.Controls.Add(this.grpIdentificacao);
             this.pnlMain.Controls.Add(this.grpContato);
             this.pnlMain.Controls.Add(this.grpEndereco);
-            this.pnlMain.Location = new System.Drawing.Point(12, 12);
+            this.pnlMain.Location = new System.Drawing.Point(-67, -42);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(641, 526);
             this.pnlMain.TabIndex = 12;
@@ -528,8 +529,8 @@
             this.label17.Size = new System.Drawing.Size(186, 86);
             this.label17.TabIndex = 14;
             this.label17.Text = "Use este campo para anotações importantes que ajudam a descrever o perfil, compor" +
-                "tamento e/ou temperamento do cliente. Isso ajudará a melhor atendê-lo em futuras" +
-                " negociações.";
+    "tamento e/ou temperamento do cliente. Isso ajudará a melhor atendê-lo em futuras" +
+    " negociações.";
             // 
             // label16
             // 
@@ -567,7 +568,7 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Image = global::Gadz.Shop.Commom.Resources.Properties.Resources.img_salvar_24x24;
+            this.btnSalvar.Image = ((System.Drawing.Image)(resources.GetObject("btnSalvar.Image")));
             this.btnSalvar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalvar.Location = new System.Drawing.Point(528, 464);
             this.btnSalvar.Name = "btnSalvar";
@@ -579,7 +580,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Image = global::Gadz.Shop.Commom.Resources.Properties.Resources.img_reset_24x24;
+            this.btnLimpar.Image = ((System.Drawing.Image)(resources.GetObject("btnLimpar.Image")));
             this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLimpar.Location = new System.Drawing.Point(412, 464);
             this.btnLimpar.Name = "btnLimpar";
@@ -589,17 +590,15 @@
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.Limpar);
             // 
-            // frmAddCliente
+            // Cadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(665, 562);
+            this.ClientSize = new System.Drawing.Size(507, 455);
             this.Controls.Add(this.pnlMain);
             this.MinimumSize = new System.Drawing.Size(523, 494);
-            this.Name = "frmAddCliente";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
+            this.Name = "Cadastro";
             this.Text = "Cadastro de clientes";
             this.Load += new System.EventHandler(this.Abrir);
             this.grpIdentificacao.ResumeLayout(false);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gadz.Shop.Commom.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,10 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Gadz.Shop.Stock.Forms {
-    public partial class Main : Form {
-
-        public Main() {
+namespace Gadz.Shop.Stock.Forms.Categorias {
+    public partial class Pesquisa : MdiBaseForm {
+        public Pesquisa() {
             InitializeComponent();
         }
     }

@@ -1,83 +1,95 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+﻿using Gadz.Shop.Access.Forms;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gadz.Shop.Commom.Forms;
 
 namespace Gadz.Shop.HR.Forms {
     public partial class Main : Form {
-        private int childFormNumber = 0;
+
+        readonly TaskScheduler _threadUI;
 
         public Main() {
+
+            _threadUI = TaskScheduler.FromCurrentSynchronizationContext();
+
             InitializeComponent();
+            DefinirPermissoes();
+            Program.Sessao.AoLogar += DefinirPermissoes;
         }
 
-        private void ShowNewForm(object sender, EventArgs e) {
-            Form childForm = new Form();
-            childForm.MdiParent = this;
-            childForm.Text = "Window " + childFormNumber++;
-            childForm.Show();
+        void DefinirPermissoes() {
+
+            Task.Factory.StartNew(()=> {
+                bool visivel = Program.Sessao.Logada;
+
+                //
+                menuAcessoLogin.Enabled = !visivel;
+                menuAcessoLogout.Enabled = visivel;
+                menuAcessoTrocarSenha.Enabled = visivel;
+                menuAcessoTrocarUsuario.Enabled = visivel;
+
+                //
+
+
+                menuRh.Visible = visivel;
+            }, CancellationToken.None, TaskCreationOptions.None, _threadUI);
         }
 
-        private void OpenFile(object sender, EventArgs e) {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK) {
-                string FileName = openFileDialog.FileName;
+        private void loginToolStripMenuItem_Click(object sender, System.EventArgs e) {
+            new Login().ShowInside(this);
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, System.EventArgs e) {
+            if(MessageBox.Show("Tem certeza que deseja deslogar?","",MessageBoxButtons.OKCancel) == DialogResult.OK) {
+                Program.Sessao.Deslogar();
+                DefinirPermissoes();
             }
         }
 
-        private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e) {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK) {
-                string FileName = saveFileDialog.FileName;
+        private void trocarSenhaToolStripMenuItem_Click(object sender, System.EventArgs e) {
+            new AlterarSenha().ShowInside(this);
+        }
+
+        private void trocarUsuárioToolStripMenuItem_Click(object sender, System.EventArgs e) {
+            if (MessageBox.Show("Tem certeza que deseja deslogar?", "", MessageBoxButtons.OKCancel) == DialogResult.OK) {
+                Program.Sessao.Deslogar();
+                loginToolStripMenuItem_Click(sender, e);
             }
         }
 
-        private void ExitToolsStripMenuItem_Click(object sender, EventArgs e) {
-            this.Close();
-        }
-
-        private void CutToolStripMenuItem_Click(object sender, EventArgs e) {
-        }
-
-        private void CopyToolStripMenuItem_Click(object sender, EventArgs e) {
-        }
-
-        private void PasteToolStripMenuItem_Click(object sender, EventArgs e) {
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e) {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
-        }
-
-        private void CascadeToolStripMenuItem_Click(object sender, EventArgs e) {
-            LayoutMdi(MdiLayout.Cascade);
-        }
-
-        private void TileVerticalToolStripMenuItem_Click(object sender, EventArgs e) {
-            LayoutMdi(MdiLayout.TileVertical);
-        }
-
-        private void TileHorizontalToolStripMenuItem_Click(object sender, EventArgs e) {
-            LayoutMdi(MdiLayout.TileHorizontal);
-        }
-
-        private void ArrangeIconsToolStripMenuItem_Click(object sender, EventArgs e) {
-            LayoutMdi(MdiLayout.ArrangeIcons);
-        }
-
-        private void CloseAllToolStripMenuItem_Click(object sender, EventArgs e) {
-            foreach (Form childForm in MdiChildren) {
-                childForm.Close();
+        private void sairToolStripMenuItem_Click(object sender, System.EventArgs e) {
+            if (MessageBox.Show("Tem certeza que deseja sair?", "", MessageBoxButtons.OKCancel) == DialogResult.OK) {
+                Close();
             }
+        }
+
+        private void menuCadastroFuncionariosCadastro_Click(object sender, System.EventArgs e) {
+            new Funcionarios.Cadastro().ShowInside(this);
+        }
+
+        private void menuCadastroFuncionariosPesquisa_Click(object sender, System.EventArgs e) {
+            new Funcionarios.Pesquisa().ShowInside(this);
+        }
+
+        private void menuCadastroEnderecosCadastro_Click(object sender, System.EventArgs e) {
+            new Enderecos.Cadastro().ShowInside(this);
+        }
+
+        private void menuCadastroEnderecosPesquisa_Click(object sender, System.EventArgs e) {
+            new Enderecos.Pesquisa().ShowInside(this);
+        }
+
+        private void menuCadastroSalariosPesquisa_Click(object sender, System.EventArgs e) {
+            new Salarios.Pesquisa().ShowInside(this);
+        }
+
+        private void menuCadastroSalariosPromocoes_Click(object sender, System.EventArgs e) {
+            new Salarios.Cadastro().ShowInside(this);
+        }
+
+        private void sobreToolStripMenuItem_Click(object sender, System.EventArgs e) {
+            MessageBox.Show("Recursos Humanos para SISTEMA DE LOJA");
         }
     }
 }

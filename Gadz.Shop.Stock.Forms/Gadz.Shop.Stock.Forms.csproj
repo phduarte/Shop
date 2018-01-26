@@ -51,6 +51,12 @@
     <Compile Include="Categorias\Cadastro.Designer.cs">
       <DependentUpon>Cadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Categorias\Pesquisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Categorias\Pesquisa.Designer.cs">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estoque\Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Categorias\Cadastro.resx">
       <DependentUpon>Cadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categorias\Pesquisa.resx">
+      <DependentUpon>Pesquisa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estoque\Entrada.resx">
       <DependentUpon>Entrada.cs</DependentUpon>

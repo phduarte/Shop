@@ -48,6 +48,7 @@
     <Compile Include="Controls\Loading.designer.cs">
       <DependentUpon>Loading.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormExtensions.cs" />
     <Compile Include="FormSingleton.cs" />
     <Compile Include="MdiBaseForm.cs">
       <SubType>Form</SubType>

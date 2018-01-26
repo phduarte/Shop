@@ -42,7 +42,7 @@ namespace Gadz.Shop.Stock.Forms.Produtos {
         }
 
         private void Cadastrar(object sender, EventArgs e) {
-            new Cadastro().ShowInside(_currentMdiParent);
+            new Cadastro().ShowInside(MdiCurrent);
         }
 
         private void Editar(object sender, EventArgs e) {
@@ -55,7 +55,7 @@ namespace Gadz.Shop.Stock.Forms.Produtos {
 
             cod_barras = r.Cells["cod_barras"].Value.ToString();
 
-            new Cadastro(cod_barras).ShowInside(_currentMdiParent);
+            new Cadastro(cod_barras).ShowInside(MdiCurrent);
         }
     }
 }

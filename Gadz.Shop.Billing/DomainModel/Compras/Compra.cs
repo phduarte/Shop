@@ -2,8 +2,8 @@
 using Gadz.Shop.Commom.Model;
 using System;
 
-namespace Gadz.Shop.Billing.Model.Faturas {
-    internal class Fatura : Entity, IFatura {
+namespace Gadz.Shop.Billing.DomainModel.Compras {
+    internal class Fatura : Entity, ICompra {
 
         public string Descricao { get; set; }
         public double Valor { get; set; }
@@ -11,7 +11,7 @@ namespace Gadz.Shop.Billing.Model.Faturas {
         public DateTime DataVencimento { get; set; }
         public Identity FuncionarioId { get; set; }
         public Identity FornecedorId { get; set; }
-        decimal IFatura.Valor { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        decimal ICompra.Valor { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public ICliente Cliente { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string DataRecebimento { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 

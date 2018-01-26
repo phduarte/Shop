@@ -2,6 +2,7 @@
 
 namespace Gadz.Shop.Billing.DomainModel.Clientes {
     public interface ICliente : IEntity {
-        string Nome { get; }
+        Nome Nome { get; }
+        Cpf Cpf { get; }
     }
 }

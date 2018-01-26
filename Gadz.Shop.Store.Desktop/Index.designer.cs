@@ -87,7 +87,7 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(58, 18);
+            this.panel1.Location = new System.Drawing.Point(119, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(712, 560);
             this.panel1.TabIndex = 0;
@@ -492,7 +492,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(828, 587);
+            this.ClientSize = new System.Drawing.Size(951, 574);
             this.Controls.Add(this.panel1);
             this.MinimumSize = new System.Drawing.Size(752, 613);
             this.Name = "Index";

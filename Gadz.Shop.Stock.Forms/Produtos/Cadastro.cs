@@ -321,15 +321,15 @@ namespace Gadz.Shop.Stock.Forms.Produtos {
         }
 
         private void CadastrarCategoria(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Categorias.Cadastro().ShowInside(_currentMdiParent);
+            new Categorias.Cadastro().ShowInside(MdiCurrent);
         }
 
         private void CadastrarFabricante(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Fabricantes.Cadastro().ShowInside(_currentMdiParent);
+            new Fabricantes.Cadastro().ShowInside(MdiCurrent);
         }
 
         private void CadastrarFornecedor(object sender, LinkLabelLinkClickedEventArgs e) {
-            new Fornecedores.Cadastro().ShowInside(_currentMdiParent);
+            new Fornecedores.Cadastro().ShowInside(MdiCurrent);
         }
 
         private void AlterarImagem(object sender, LinkLabelLinkClickedEventArgs e) {
