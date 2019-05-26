@@ -2,6 +2,8 @@
 
 Um ERP completo para desktop utilizando C# e Windows Forms.
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/phduarte/Shop?branch=master)](https://bettercodehub.com/)
+
 Um problema grande é melhor resolvido se for quebrado em pedaços menores e trabalhado cada pedaço com a atenção que ele requer, pela pessoa que melhor lhe entende.
 Por se tratar de um sistema que "abraça" muitas responsabilidades e tende a se tornar grande e complexo, adotaremos a distribuição de camadas como arquitetura.
 
